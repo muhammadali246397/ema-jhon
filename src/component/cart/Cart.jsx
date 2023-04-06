@@ -8,7 +8,6 @@ const Cart = ({carts}) => {
     for(const cart of carts){
         cart.quantity = cart.quantity || 1;
       quantity = quantity + cart.quantity
-      console.log(quantity)
        totalPrice = totalPrice + cart.price *cart.quantity
        shiping= shiping + cart.shipping * cart.quantity;
     }
