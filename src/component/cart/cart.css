@@ -1,0 +1,27 @@
+.clear-btn{
+    margin: 10px auto;
+    background: #FF3030;
+    border-radius: 4px;
+    color: white;
+    width: 90%;
+    text-align: center;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+}
+.review{
+   margin: 10px auto;
+    background-color: #FF9900;
+    border-radius: 4px;
+    color: white;
+    width: 90%;
+    text-align: center;display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none; 
+}
+.links{
+    text-decoration: none;
+}

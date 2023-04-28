@@ -13,6 +13,10 @@ import Orders from './component/orders/Orders';
 import Inventory from './component/inventory/Inventory';
 import Login from './component/login/Login';
 import { CartProductsLoded } from './utilities/loder';
+import Signin from './component/signIn/Signin';
+import Context from './component/Context/Context';
+import Privateroutes from './component/routs/Privateroutes';
+import Cheakout from './component/cheakout/Cheakout';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -39,6 +43,18 @@ const router = createBrowserRouter([
       {
         path:'login',
         element:<Login></Login>
+      },
+      {
+        path:'/order-Review',
+        element:<Orders></Orders>
+      },
+      {
+        path:'/signin',
+        element:<Signin></Signin>
+      },
+      {
+        path:'/cheakout',
+        element:<Privateroutes><Cheakout></Cheakout></Privateroutes>
       }
     ],
 
@@ -47,6 +63,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Context>
     <RouterProvider router={router} />
+    </Context>
   </React.StrictMode>,
 )

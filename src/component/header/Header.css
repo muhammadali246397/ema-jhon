@@ -14,3 +14,10 @@
 .header a:hover{
     color: orange;
 }
+.user{
+    margin-left: 10px;
+    color: white;
+}
+.btn{
+    margin-left:10px ;
+}

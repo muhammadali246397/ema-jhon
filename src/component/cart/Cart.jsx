@@ -1,9 +1,12 @@
 import React from 'react';
-
-const Cart = ({carts}) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faCoffee, faDeleteLeft, faShoppingCart, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+import './cart.css';
+import { Link, Outlet } from 'react-router-dom';
+const Cart = ({carts, clearCart,children}) => {
     
     let totalPrice = 0;
-    let shiping= 0;
+    let shiping= 0; 
     let quantity= 0;
     for(const cart of carts){
         cart.quantity = cart.quantity || 1;
@@ -24,6 +27,12 @@ const Cart = ({carts}) => {
             <p>Total shipping charge : ${shiping}</p>
             <h6>Tax : ${tax}</h6>
             <h4>Grand Total : ${grandTotal}</h4>
+            <button className="clear-btn" onClick={clearCart}>
+                <span>Clear Cart</span>
+                <FontAwesomeIcon icon={faTrashAlt} />
+            </button>
+        {children}
+           
         </div>
     );
 };

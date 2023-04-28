@@ -1,0 +1,50 @@
+.form-container {
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: 500px;
+    height: 600px;
+    background: #FFFFFF;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow:rgba(255, 153, 0, 0.3) -10px 10px ;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-container input {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+
+    padding: 5px 5px;
+}
+
+.form-container h3 {
+    text-align: center;
+    font-size: 21px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 40px;
+    border: none;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    padding: 12px;
+
+}
+.submit:hover{
+    background: rgba(255, 153, 0, 0.6);
+}
+.sign-link{
+    text-align: center;
+}
+
+.linked{
+    color:  rgba(255, 153, 0, 0.6);
+    text-decoration: none;
+}

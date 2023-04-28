@@ -1,0 +1,57 @@
+.maincon {
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin: 10px auto;
+    width: 571px;
+
+    display: flex;
+    align-items: center;
+}
+
+.picture img {
+    width: 91px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.name {
+    margin: 0px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+}
+
+.product-info p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    margin-left: 10px;
+    letter-spacing: 0.0025em;
+}
+
+.color {
+    color: #FF9900;
+}
+
+.icon {
+    margin: 0px 30px 0px 30px;
+    background: rgba(235, 87, 87, 0.3);
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    color: tomato;
+    border-radius: 50%;
+    border: none;
+
+}
